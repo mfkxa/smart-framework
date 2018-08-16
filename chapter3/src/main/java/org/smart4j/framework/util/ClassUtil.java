@@ -95,13 +95,13 @@ public final class ClassUtil {
 				doAddClass(classSet,className);	
 			}else{
 				String subPackagePath = fileName;
-				if(StringUtil.isNotTmpty(subPackagePath)){
-					subPackagePath = packagePath+"/"+subPackagePath;
+				if(StringUtil.isNotTmpty(packagePath)){
+					subPackagePath = packagePath+subPackagePath;
 				}
 				
 				String subPackageName = fileName;
-				if(StringUtil.isNotTmpty(subPackageName)){
-					subPackageName = subPackagePath+"."+subPackageName;
+				if(StringUtil.isNotTmpty(packageName)){
+					subPackageName = packageName+"."+subPackageName;
 				}
 				
 				addClass(classSet, subPackagePath, subPackageName);

@@ -46,7 +46,7 @@ public class ReflectionUtil {
 	public static void setField(Object obj,Field field,Object value){
 		field.setAccessible(true);
 		try {
-			field.set(field, value);
+			field.set(obj, value);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			LOGGER.error("setField fail",e);

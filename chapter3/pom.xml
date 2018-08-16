@@ -3,8 +3,8 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.smart4j</groupId>
   <artifactId>chapter3</artifactId>
-  <packaging>war</packaging>
   <version>1.0.0</version>
+  <packaging>jar</packaging>
   <name>chapter3 Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
@@ -21,6 +21,31 @@
 		<artifactId>smart-framework</artifactId>
 		<version>1.0.0</version>
 	</dependency>
+	
+	<!-- servlet -->
+  	<dependency>
+  		<groupId>javax.servlet</groupId>
+  		<artifactId>javax.servlet-api</artifactId>
+  		<version>3.1.0</version>
+  		<scope>provided</scope>
+  	</dependency>
+  	
+  	<!-- jsp -->
+  	<dependency>
+  		<groupId>javax.servlet.jsp</groupId>
+  		<artifactId>jsp-api</artifactId>
+  		<version>2.2</version>
+  		<scope>provided</scope>
+  	</dependency>
+  	
+  	<!-- https://mvnrepository.com/artifact/cglib/cglib -->
+	<dependency>
+	    <groupId>cglib</groupId>
+	    <artifactId>cglib</artifactId>
+	    <version>3.2.5</version>
+	</dependency>
+  	
+	
   </dependencies>
   <build>
     <finalName>chapter3</finalName>

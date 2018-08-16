@@ -1,8 +1,5 @@
 package org.smart4j.framework.util;
 
-import com.fasterxml.jackson.annotation.JsonFormat.Value;
-import com.mysql.jdbc.StringUtils;
-
 public class CastUtil {
 	
 	public static String castString(Object obj){
